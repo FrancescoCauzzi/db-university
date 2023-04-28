@@ -5,7 +5,7 @@ WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
 
 2) SELECT `degrees`.* FROM `degrees` 
 INNER JOIN `departments` ON `degrees`.`department_id` = `departments`.`id` 
-WHERE `departments`.`name` = 'Dipartimento di Neuroscienze';
+WHERE `departments`.`name` = 'Dipartimento di Neuroscienze' AND `degrees`.`level` = 'magistrale';
 
 3) SELECT `courses`.* FROM `courses` 
 INNER JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id` 
